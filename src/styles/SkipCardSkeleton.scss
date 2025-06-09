@@ -1,0 +1,53 @@
+.skip-card.skeleton {
+  background-color: #fffefc;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .skeleton-title,
+  .skeleton-text,
+  .skeleton-button {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+
+  .skeleton-title {
+    width: 60%;
+    height: 24px;
+  }
+
+  .skeleton-text {
+    width: 80%;
+    height: 16px;
+  }
+
+  .skeleton-text.short {
+    width: 40%;
+  }
+
+  .skeleton-button {
+    width: 70%;
+    height: 36px;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
